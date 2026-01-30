@@ -1,3 +1,235 @@
 @charset "UTF-8";
 /* CSS Document */
 
+p{
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+}
+
+h3{
+    font-family: "Goudy Bookletter 1911", serif;
+    font-style: normal;
+}
+
+.goudy-bookletter-1911-regular {
+  font-family: "Goudy Bookletter 1911", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+#header-content{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+nav{
+    position: absolute;
+    bottom: 20px;
+    right: 120px;
+}
+
+nav li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #16325a;
+}
+
+nav a:hover{
+    background-color: #16325a;
+    color: white;
+    padding: 10px 10px;
+}
+
+#banner{
+    background-image: url("images/home-banner.jpg");
+    height: 440px;
+    width: 100%;
+}
+
+#color-bar{
+    background-color: #a32973;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#color-bar h3{
+    font-size: 25px;
+}
+
+#wrapper-white{
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+section{
+    width: 580px;
+}
+
+section h1{
+    font-size: 36px;
+    color: #a32973;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+section p{
+    font-size: 16px; 
+    line-height: 1.5;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+aside{
+    width: 300px;
+    border: 3px solid #16325a;
+    text-align: center;
+}
+
+aside h2{
+    color: #a32973;
+    font-size: 25px;
+    padding: 10px 0;
+    margin: 20px;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+#wrapper-shop{
+    background-color: #f4f3f0;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+#shop-content{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+}
+
+#shop-box{
+    width: 300px;
+    margin-left: 15px;
+}
+
+#shop-content h3{
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #a32973;
+}
+
+#shop-content a{
+    text-decoration: none;
+    color: white;
+    background-color: #a32973;
+    padding: 5px;
+    font-family: "Lato", sans-serif;
+}
+
+#shop-content p{
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+footer{
+    width: 100%;
+    background-color: #16352a; 
+    color: white;
+    padding: 20px 0;
+}
+
+#footer-content{
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h3{
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+footer p{
+    color: white;
+    font-size: 16px;
+    opacity: 70%;
+    line-height: 1.5;
+}
+
+#footer-right{
+    text-align: right;
+}
