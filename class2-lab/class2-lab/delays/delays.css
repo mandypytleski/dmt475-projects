@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+
+#container{
+    border: 1px solid #aaa;
+    height: 400px;
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+
+#main{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50px;
+    position: absolute;
+    top: 160px;
+    left: 210px;
+    transition: all 2s ease-in-out .5s;
+}
+
+#container:hover #main{
+    opacity: 0;
+}
+
+#ball1, #ball2, #ball3, #ball4, #ball5, #ball6, #ball7, #ball8{
+    background-color: blue;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    transition: all 2s ease-in-out;
+}
+
+#ball1{
+    transition-delay: 0.1s;
+}
+#ball2{
+    transition-delay: 0.2s;
+}
+#ball3{
+    transition-delay: 0.3s;
+}
+#ball4{
+    transition-delay: 0.4s;
+}
+#ball5{
+    transition-delay: 0.5s;
+}
+#ball6{
+    transition-delay: 0.6s;
+}
+#ball7{
+    transition-delay: 0.7s;
+}
+#ball8{
+    transition-delay: 0.8s;
+}
+
+#container:hover #ball1{
+    transform: translate(-250px, 200px);
+}
+
+#container:hover #ball2{
+    transform: translate(0px, -200px);
+}
+
+#container:hover #ball3{
+    transform: translate(250px, -200px);
+}
+
+#container:hover #ball4{
+    transform: translate(250px, 0px);
+}
+
+#container:hover #ball5{
+    transform: translate(250px, 200px);
+}
+
+#container:hover #ball6{
+    transform: translate(0px, 200px);
+}
+
+#container:hover #ball7{
+    transform: translate(-250px, -200px);
+}
+
+#container:hover #ball8{
+    transform: translate(-250px, 0px);
+}
