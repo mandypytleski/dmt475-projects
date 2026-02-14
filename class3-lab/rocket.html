@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Rocket</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#launchRocket").click(function() {
+                $( ".rocket" ).animate({
+                bottom: "1600"},
+                1000);
+                }); /*end launchRocket.click */
+                $("#landRocket").click(function() {
+                $( ".rocket" ).animate({
+                top: "350"},
+                1000), "slow"; 
+                
+                }); /*end landRocket.click */
+
+            }); // end document.ready
+        </script>
+         <style>
+            body {
+                background-image: url(images/rocket/night-sky.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }/* end body */
+        </style>
+    </head>
+
+    <body>
+        <input type="button" id="launchRocket" value="Launch" />
+        <input type="button" id="landRocket" value="Land" /><br />
+        <img class="rocket" src="images/rocket/rocket-icon.png" alt="Rocket Icon" style="position: absolute; bottom:0; left: 500px;">
+    </body>
+</html>

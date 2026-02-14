@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Airplane</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <style>
+            .plane {
+                position: relative; 
+                top: 50px;
+                left: 2000px;
+            }
+            .plane-anim {
+                animation: plane 10s ease-out;
+                animation-delay: 1s;
+            }
+            @keyframes plane {
+                from {right: -300px;}
+                to {left: -2000px;}
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <script>
+
+            $(window).on("load", function() {
+                    $('.plane').addClass('plane-anim'); 
+                    $('.plane').on('animationend', function() {
+                        $(this).hide('plane'); 
+                    });
+            }); /* end window.load */
+
+        </script>
+
+    </head>
+
+    <body>
+        <img class="plane" src="images/airplane/airplane.png" alt="Image of Cartoon Plane">
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Dartboard</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+        <script>
+            $(function() {
+            $( ".moveit" ).draggable();
+            });
+        </script>
+    </head>
+
+    <body>
+        <img src="images/darts/dartboard.png" alt="Dartboard">
+        <div class="moveit" style="position:absolute; top:480px; left:400px;">       
+            <img src="images/darts/dart1.png" alt="Red Dart">
+        </div>
+
+        <div class="moveit" style="position:absolute; top:480px; left:400px;">       
+            <img src="images/darts/dart2.png" alt="Blue Dart">
+        </div>
+
+        <div class="moveit" style="position:absolute; top:480px; left:400px;">       
+            <img src="images/darts/dart3.png" alt="Green Dart">
+        </div>
+
+        <div class="moveit" style="position:absolute; top:480px; left:400px;">       
+            <img src="images/darts/dart4.png" alt="Red Dart">
+        </div>
+    </body>
+</html>
