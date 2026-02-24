@@ -1,0 +1,189 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 1em; 
+	margin:0;
+	padding:0;
+}
+
+p {
+	font-size: 0.8125em; 
+	line-height: 18px; 
+}
+
+h1, h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+	color: #ffffff;
+	font-size: 1.75em; 
+}
+
+h2 {
+	font-size: 1.25em; 
+	margin-bottom: 10px;
+}
+
+img {
+	max-width:100%;
+	height: auto;
+	display: block;	
+}
+
+#wrapper {
+	width: 81.699%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header {
+	width: 100%;
+	background: #39F;
+	padding: 0.875em;
+}
+
+nav ul {
+	margin: 6px 0;
+	padding-left:0;
+	font-size: 0.875em; 
+	text-align: center;
+}
+
+nav li {
+	background:#0033FF;
+	color: #ffffff;
+	display: inline-block;
+	list-style:none;
+	margin: 0 0.375em; 
+	padding: 6px 0;
+	width: 14.7%; 
+	text-align:center;
+}
+
+nav li.home {
+	margin-left:0;
+}
+
+nav li.contact {
+	margin-right:0;
+}
+
+main {
+	width:100%;
+}
+
+#container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+section {
+	width: 63.5%; 
+}
+
+aside {
+	overflow: hidden;
+	width: 28.2%; 
+	background:#6600CC;
+	padding: 0.875em;
+	min-height: 265px;
+}
+
+aside h1 {
+	margin-bottom: 12px;
+	
+}
+
+aside p {
+	color: #ffffff;
+}
+
+#column{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.9385em;
+}
+
+.column-left,
+.column-center,
+.column-right {
+	width: 28.2%; 
+	background:#FF3;
+	min-height:150px;
+	padding: 0.875em;
+}
+
+.column-left {
+	clear: both;
+	margin: 12px 0;
+}
+
+.column-center {
+	margin: 12px 0; 
+}
+
+.column-right {
+	margin: 12px 0;
+}
+
+footer {
+	clear: both;
+	width: 100%;
+	background:#F00;
+	text-align:center;
+	padding:6px 0;
+}
+
+footer p {
+	color: #ffffff;
+	font-size:0.625em; }
+
+/*Tablet*/
+@media(max-width: 900px){
+	#container{
+		gap: 0.1em;
+	}
+	section{
+		width: 55%;
+	}	
+	aside{
+		width: 40%;
+	}
+	nav li{
+		width: 30%;
+		margin: 0.375%;
+	}
+}
+
+/*Mobile*/
+@media(max-width: 600px){
+	h1{
+		font-size: 1em;
+		text-align: center;
+	}
+	nav li{
+		width: 100%;
+		display: block;
+		margin: 0.25em 0;
+	}
+	section, aside{
+		width: 100%;
+	}
+
+	aside{
+		min-height: auto;
+	}
+	.column-center, .column-left, .column-right{
+		width: 100%;
+		min-height: auto;
+	}
+}
