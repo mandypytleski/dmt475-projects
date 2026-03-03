@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>BootStrap Lab Class 5</title>
+        <link type="text/css" rel="stylesheet" href="css/reset.css">
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/bulldog_thumbnail.jpg" alt="dog">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Cuteness</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Carousel-->
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="images/bulldog_1200.jpg" class="d-block w-100" alt="Bulldog">
+                </div>
+                <div class="carousel-item">
+                <img src="images/golden pup_1200.jpg" class="d-block w-100" alt="Golden Pup">
+                </div>
+                <div class="carousel-item">
+                <img src="images/snugglypup.jpg" class="d-block w-100" alt="Snuggly Pup">
+                </div>
+                <div class="carousel-item">
+                <img src="images/workingpup.jpg" class="d-block w-100" alt="Working Pup">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!--Grid-->
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <h2>The Cute Puppy</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum elementum auctor quam vel maximus. Quisque id neque et nisl maximus convallis sit amet a metus. Cras interdum dui velit, ac ornare quam semper et. Sed sit amet gravida sem, malesuada aliquet augue. Praesent tempus semper erat ac vulputate. Duis egestas diam sit amet lectus vehicula, viverra sodales ligula aliquet. Curabitur at tortor auctor arcu interdum interdum sit amet nec est. Sed vitae orci finibus, bibendum purus at, pharetra diam. Nullam mattis mauris erat, vitae vulputate orci tincidunt a. Sed pellentesque leo vel imperdiet suscipit. Curabitur non quam et risus dictum molestie.</p>
+                    <button type="button" class="btn btn-primary">Learn More</button>
+                </div>
+                <div class="col">
+                    <h2>The Sleepy Puppy</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum elementum auctor quam vel maximus. Quisque id neque et nisl maximus convallis sit amet a metus. Cras interdum dui velit, ac ornare quam semper et. Sed sit amet gravida sem, malesuada aliquet augue. Praesent tempus semper erat ac vulputate. Duis egestas diam sit amet lectus vehicula, viverra sodales ligula aliquet. Curabitur at tortor auctor arcu interdum interdum sit amet nec est. Sed vitae orci finibus, bibendum purus at, pharetra diam. Nullam mattis mauris erat, vitae vulputate orci tincidunt a. Sed pellentesque leo vel imperdiet suscipit. Curabitur non quam et risus dictum molestie.</p>
+                    <button type="button" class="btn btn-primary">Learn More</button>
+                </div>
+                <div class="col">
+                    <h2>The Working Puppy</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum elementum auctor quam vel maximus. Quisque id neque et nisl maximus convallis sit amet a metus. Cras interdum dui velit, ac ornare quam semper et. Sed sit amet gravida sem, malesuada aliquet augue. Praesent tempus semper erat ac vulputate. Duis egestas diam sit amet lectus vehicula, viverra sodales ligula aliquet. Curabitur at tortor auctor arcu interdum interdum sit amet nec est. Sed vitae orci finibus, bibendum purus at, pharetra diam. Nullam mattis mauris erat, vitae vulputate orci tincidunt a. Sed pellentesque leo vel imperdiet suscipit. Curabitur non quam et risus dictum molestie.</p>
+                    <button type="button" class="btn btn-primary">Learn More</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+
+        <div class="container">
+        <footer class="py-3 my-4">
+            <p class="text-center text-muted">&copy; 2026 Mandy Pytleski. All rights reserved.</p>
+        </footer>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
