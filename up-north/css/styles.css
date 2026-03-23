@@ -1,2 +1,55 @@
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: black;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+header img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   opacity: 0.4;
+   z-index: 0;
+}
 
+.custom-nav img{
+    width: 5%;
+}
+
+/* Navbar styling */
+.custom-nav {
+    position: absolute; 
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: transparent;
+    text-align: center;
+}
+
+/* White nav text */
+.custom-nav .nav-link {
+    color: white;
+    text-align: center;
+}
+
+.custom-nav .nav-link:hover {
+    color: #dddddd;
+}
+
+.custom-nav .navbar-brand {
+    color: white;
+}
+
+#hero {
+    position: relative;
+    color: white;
+    z-index: 5;
+}

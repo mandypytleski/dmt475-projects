@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mad Libs Form</title>
+        <style>
+            #wrapper{
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            .center{
+                text-align: center;
+                color: rgb(76, 0, 117);
+            }
+
+            form{
+                border: 2px solid navy;
+                width: 80%;
+                margin: 0 auto;
+                padding: 2%;
+            }
+
+            label{
+                text-align: right;
+                font-weight: bold;
+                margin: 20px 0 10px;
+                width: 200px;
+            }
+
+            #button{
+                width: 20%;
+                margin: 10px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="center">
+                <h1>Mad Libs</h1>
+                <p>Welcome to the fun Mad Libs Page! We hope you enjoy it!<br>
+                Please fill out the form below.<br>
+                Click submit at the bottom of the page to read the story you created.</p>
+            </div>
+            <form action="madlibs.php" method="post">
+                <div>
+                    <label for="name">What is your name?</label>
+                    <input type="text" id="name" name="name">
+                    <hr>
+                </div>
+                <div>
+                    <label for="collegename">What is your College name?</label>
+                    <input type="text" id="collegename" name="collegename">
+                    <hr>
+                </div>
+                <div>
+                    <label for="adjective1">List an adjective.</label>
+                    <input type="text" id="adjective1" name="adjective1">
+                    <hr>
+                </div>
+                <div>
+                    <label for="bodypart1">List a body part.</label>
+                    <input type="text" id="bodypart1" name="bodypart1">
+                    <hr>
+                </div>
+                <div>
+                    <label for="object">List an object</label>
+                    <input type="text" id="object" name="object">
+                    <hr>
+                </div>
+                <div>
+                    <label for="odor">List an odor</label>
+                    <input type="text" id="odor" name="odor">
+                    <hr>
+                </div>
+                <div>
+                    <label for="action">List an action</label>
+                    <input type="text" id="action" name="action">
+                    <hr>
+                </div>
+                <div>
+                    <label for="adjective2">List an adjective.</label>
+                    <input type="text" id="adjective2" name="adjective2">
+                    <hr>
+                </div>
+                <div>
+                    <label for="bodypart2">List a body part.</label>
+                    <input type="text" id="bodypart2" name="bodypart2">
+                    <hr>
+                </div>
+                <div>
+                    <label for="placeoncampus">List a place on campus.</label>
+                    <input type="text" id="placeoncampus" name="placeoncampus">
+                    <hr>
+                </div>
+                <div>
+                    <label for="animal">List an animal.</label>
+                    <input type="text" id="animal" name="animal">
+                    <hr>
+                </div>
+                <div>
+                    <label for="cars">Choose a car.</label>
+                    <select name="cars" id="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="chevy">Chevy</option>
+                    </select>
+                </div>
+                <div id="button">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+            <p>An adjective is a word that modifies or describes a noun or pronoun.</p>
+        </div>
+    </body>
+</html>
