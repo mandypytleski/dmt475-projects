@@ -17,11 +17,16 @@ header img {
    height: 100%;
    object-fit: cover;
    opacity: 0.4;
-   z-index: 0;
+   z-index: 1;
 }
 
-.custom-nav img{
-    width: 5%;
+.custom-nav img {
+    width: 200%;
+    height: auto;
+    filter: none;
+    position: relative;
+    z-index: 21;
+    opacity: 1;  /* Ensures full opacity */
 }
 
 /* Navbar styling */
@@ -31,25 +36,309 @@ header img {
     width: 100%;
     height: 100px;
     background: transparent;
-    text-align: center;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* White nav text */
+.custom-nav .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.custom-nav .navbar-collapse {
+    flex-grow: 0;
+}
+
+.custom-nav .navbar-nav {
+    display: flex;
+    gap: 30px;
+}
+
 .custom-nav .nav-link {
     color: white;
     text-align: center;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 .custom-nav .nav-link:hover {
-    color: #dddddd;
+    color: #ccc;
 }
 
 .custom-nav .navbar-brand {
     color: white;
+    margin-right: auto;
+    width: 5%;
+    position: relative;
+    z-index: 21;
+}
+
+.navbar-toggler-icon{
+   filter: invert(100%) sepia(100%) grayscale(100%) brightness(200%);
 }
 
 #hero {
     position: relative;
     color: white;
     z-index: 5;
+}
+
+.green-bg {
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #225f30;
+    border-radius: 10px;
+}
+
+#testimonial-box {
+  min-height: 120px;
+}
+
+.testimonial {
+  display: none;
+  font-size: 1.3rem;
+  margin: 0 auto;
+  color: #333;
+}
+
+.testimonial.active {
+  display: block;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #225f30; /* your green */
+}
+
+.transition-hover {
+    position: relative;
+    overflow: hidden;
+}
+
+.transition-hover img {
+    transition: opacity 0.5s ease;
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(34, 95, 48, 0.9); 
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.mask h3,
+.mask p {
+    color: white;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.transition-hover:hover img {
+    opacity: 0;
+}
+
+.transition-hover:hover .mask {
+    opacity: 1;
+}
+
+.transition-hover:hover .mask h3,
+.transition-hover:hover .mask p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.owners {
+    background: url('../images/owners.JPEG') center/cover no-repeat;
+    position: relative;
+}
+
+.owners-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.navbar-logo {
+    width: 90px;
+    height: auto;
+}
+
+.footer-logo {
+    width: 70px;
+    height: auto;
+}
+
+
+#magazine-container{
+  width:100%;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: #ccc;
+  padding: 20px;
+}
+
+#magazine{
+	width:60%;
+  height: 80vh;
+  margin: 0 auto;
+  
+}
+
+#magazine .turn-page{
+	background-color:#ccc;
+	background-size:100% 100%;
+}
+
+#magazine-container button{
+  background-color: #225f30;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.feature-card {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-list li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* remove default styles */
+#accordion .ui-accordion-header {
+  background: #f8f8f8;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #225f30;
+  transition: all 0.3s ease;
+}
+
+#accordion .ui-accordion-header:hover {
+  background: #e6f2e9;
+  cursor: pointer;
+}
+
+#accordion .ui-accordion-header.ui-state-active {
+  background: #225f30;
+  color: white;
+}
+
+#accordion .ui-accordion-content {
+  border: none;
+  padding: 15px 20px;
+  background: #ffffff;
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.ui-icon {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  header {
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 2rem;
+  }
+
+  .custom-nav {
+    
+    height: auto;
+    padding: 0.5rem 1rem;
+    z-index: 30;
+  }
+
+  .custom-nav .navbar-brand {
+    width: 10%;
+  }
+
+  #hero {
+    margin-top: 96px; /* leave room for fixed navbar */
+    padding: 1.5rem 1rem 2rem;
+    z-index: 5;
+  }
+
+  #hero .col-lg-6 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #hero h1 {
+    font-size: 1.75rem;
+  }
+
+  #hero .lead {
+    font-size: 1rem;
+  }
+
+  #hero .d-grid {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  #hero .btn {
+    width: 100%;
+  }
+
+  .custom-nav .collapse {
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 0.8rem 1rem;
+  }
+
+  #magazine {
+    height: 60vw;
+    min-height: 300px;
+    max-width: 100vw;
+  }
 }
