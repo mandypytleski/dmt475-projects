@@ -25,8 +25,8 @@
                 <h1 class="display-5 fw-bold">Your Weekend Getaway</h1> 
                 <p class="lead mb-4">Trade stressful work for the quiet charm of a cozy lakeside cottage or a rustic woodland lodge. Surrounded by trees and water, this is where you can truly unplug. Whether you’re seeking a romantic escape, a family getaway, or a weekend with friends, these inviting retreats offer the perfect mix of comfort and nature—your own private slice of serenity, far from the noise and close to what matters most.</p> 
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"> 
-                    <a class="btn btn-primary" href="features.html" role="button">Features</a>
-                    <a class="btn btn-primary" href="about.html" role="button">About</a> 
+                    <a class="btn btn-primary" href="features.php" role="button">Features</a>
+                    <a class="btn btn-primary" href="about.php" role="button">About</a> 
                 </div> 
             </div> 
         </div>
@@ -74,7 +74,7 @@
                     <li>Nature trails nearby</li>
                 </ul>
 
-                <a href="features.html" class="btn btn-primary btn-lg">Explore Features</a>
+                <a href="features.php" class="btn btn-primary btn-lg">Explore Features</a>
             </div>
 
         </div>
@@ -88,7 +88,7 @@
                 <p class="lead mb-4">
                 From our story to your stay, every corner is designed for comfort, connection, and memories that last.
                 </p>
-                <a href="about.html" class="btn btn-outline-light btn-lg">Learn Our Story</a>
+                <a href="about.php" class="btn btn-outline-light btn-lg">Learn Our Story</a>
             </div>
         </section>
 

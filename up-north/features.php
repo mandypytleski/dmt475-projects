@@ -33,7 +33,7 @@
                     <p class="lead mb-4">Our resort is designed so you have everything you need the moment you arrive. From cozy fire pits perfect for late-night conversations to a variety of games and activities that keep the fun going all day, every detail is meant to make your stay easy and enjoyable. Whether you’re looking to relax, connect with others, or stay active, there’s always something right at your fingertips—so you can focus on making memories without worrying about anything else.</p> 
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"> 
                         <a class="btn btn-primary" href="booking.php" role="button">Book Now</a>
-                        <a class="btn btn-primary" href="about.html" role="button">About</a> 
+                        <a class="btn btn-primary" href="about.php" role="button">About</a> 
                     </div> 
                 </div> 
             </div>

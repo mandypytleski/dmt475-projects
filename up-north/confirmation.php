@@ -12,6 +12,7 @@ $firstname = mysqli_real_escape_string($con, $_POST['firstname']);
 $lastname = mysqli_real_escape_string($con, $_POST['lastname']);
 $email = mysqli_real_escape_string($con, $_POST['email']);
 $phone = mysqli_real_escape_string($con, $_POST['phone']);
+$comments = mysqli_real_escape_string($con, $_POST['comments']);
 $accommodation_id = intval($_POST['accommodation']);
 
 
@@ -53,6 +54,7 @@ if (mysqli_num_rows($result) > 0) {
 
         <p><strong>Email:</strong> <?php echo $email; ?></p>
         <p><strong>Phone:</strong> <?php echo $phone; ?></p>
+        <p><strong>Comments:</strong> <?php echo $comments ? $comments : "None"; ?></p>
 
         <hr>
 

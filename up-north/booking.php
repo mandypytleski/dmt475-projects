@@ -26,8 +26,8 @@
                 <h1 class="display-5 fw-bold">Ready to Book Your Stay?</h1> 
                 <p class="lead mb-4">We'd love to have you stay with us! Take a look at our houses below and pick your date!</p> 
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"> 
-                    <a class="btn btn-primary" href="features.html" role="button">Features</a>
-                    <a class="btn btn-primary" href="about.html" role="button">About</a> 
+                    <a class="btn btn-primary" href="features.php" role="button">Features</a>
+                    <a class="btn btn-primary" href="about.php" role="button">About</a> 
                 </div> 
             </div> 
         </div>
@@ -86,8 +86,8 @@
         </section>
 
         <section class="container py-5">
-            <h2 class="text-center mb-5">Book Your Stay</h2>
-            <p class="text-center">Select a property above and fill in your information below to complete your booking.</p>
+            <h2 class="text-center mb-5">Get in Touch!</h2>
+            <p class="text-center">Select a property above to ask us about a specific accommodation!</p>
             <form id="bookingForm" class="row g-3" action="confirmation.php" method="POST">
                 <div class="col-md-6">
                     <label for="firstname" class="form-label">First Name</label>
@@ -113,9 +113,13 @@
                     <label for="checkout" class="form-label">Check-out Date</label>
                     <input type="text" name="checkout" id="checkout" class="form-control" placeholder="Select check-out date" required>
                 </div>
-                <input type="hidden" id="accommodation" name="accommodation">
+                <div class="col-md-6">
+                    <label for="comments" class="form-label">Comments</label>
+                    <textarea id="comments" name="comments" class="form-control" placeholder="Enter any comments or special requests" rows="3"></textarea>
+                </div>
+                <input type="hidden" id="accommodation" name="accommodation" required>
                 <div class="col-12 text-center">
-                    <button type="submit" class="btn btn-primary">Book Now</button>
+                    <button type="submit" class="btn btn-primary">Ask About This Property</button>
                 </div>
             </form>
 

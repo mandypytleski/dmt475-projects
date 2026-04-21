@@ -26,7 +26,7 @@
                     <h1 class="display-5 fw-bold">Our Story</h1> 
                     <p class="lead mb-4">What started in band class as a group of friends turned into a team that built something real together. Mandy brings the vision and adventure, Ada creates the excitement through events and marketing, Fin makes sure everything is set up for residents to enjoy, and Megan keeps it all financially on track. Together, we combined our strengths to turn a simple idea into something meaningful.</p> 
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"> 
-                        <a class="btn btn-primary" href="features.html" role="button">Features</a>
+                        <a class="btn btn-primary" href="features.php" role="button">Features</a>
                         <a class="btn btn-primary" href="booking.php" role="button">Book Now</a> 
                     </div> 
                 </div> 
