@@ -15,21 +15,7 @@
        
     <header>
         <nav class="navbar navbar-expand-lg custom-nav">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="up-north-logo-white.png" alt="Logo" width="90" height="auto">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" href="index.html">Home</a>
-                        <a class="nav-link" href="features.html">Features</a>
-                        <a class="nav-link" href="about.html">About</a>
-                    </div>
-                </div>
-            </div>
+            <?php include __DIR__ . '/includes/nav.php'; ?>
         </nav>
             
         <img src="images/lake.jpg" alt="Lake with dock">
@@ -54,7 +40,7 @@
                 <div class="mask">
                     <h3>Lakeside Cottage</h3>
                     <p>Perfect for couples or small families.</p>
-                    <a class="btn btn-light" href="#" role="button">Book Now</a>
+                    <a class="btn btn-light" href="booking.php" role="button">Book Now</a>
                 </div>
                 </div>
                 <div class="col-md-6 transition-hover">
@@ -62,7 +48,7 @@
                 <div class="mask">
                     <h3>Woodland Cabin</h3>
                     <p>Nestled in the trees for total privacy.</p>
-                    <a class="btn btn-light" href="#" role="button">Book Now</a>
+                    <a class="btn btn-light" href="book.php" role="button">Book Now</a>
                 </div>
             </div>
         </div>
@@ -107,19 +93,8 @@
         </section>
 
         <!--Footer-->
-        <div class="container"> 
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"> 
-                <p class="col-md-4 mb-0 text-body-secondary">© 2026 Up North Lodge &amp; Resort</p> 
-                <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none" aria-label="Bootstrap"> 
-                    <img src="up-north-logo.png" alt="Logo" class="footer-logo">
-                </a> 
-                <ul class="nav col-md-4 justify-content-end"> 
-                    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li> 
-                    <li class="nav-item"><a href="features.html" class="nav-link px-2 text-body-secondary">Features</a></li> 
-                    <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">About</a></li> 
-
-                </ul> 
-            </footer> 
+        <div class="container">
+            <?php include __DIR__ . '/includes/footer.php'; ?>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

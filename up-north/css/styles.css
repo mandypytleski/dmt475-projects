@@ -232,7 +232,7 @@ header img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.feature-card:hover {
+.feature-card:hover, .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
@@ -281,6 +281,34 @@ header img {
 
 .ui-icon {
   display: none;
+}
+
+#filters{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form-select-filter{
+  border: 1px solid #225f30;
+  text-align: center;
+	font-weight: bold;
+	color: #225f30;
+	padding: 2vh;
+	border-radius: 10px;
+}
+
+.property-card {
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.property-card:hover {
+    transform: scale(1.02);
+}
+
+.property-card.selected {
+    border: 3px solid #0d6efd;
+    box-shadow: 0 0 10px rgba(13,110,253,0.4);
 }
 
 @media (max-width: 992px) {
